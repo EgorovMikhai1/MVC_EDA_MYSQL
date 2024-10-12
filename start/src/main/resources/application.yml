@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/appp2
+    username: root
+    password: 123123
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/schema.sql
+      data-locations: classpath:db/data.sql
